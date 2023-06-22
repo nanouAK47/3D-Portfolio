@@ -11,24 +11,33 @@ import {
   nodejs,
   git,
   figma,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
+  verifier,
+  lapizz,
+  carhub,
+  sumz,
+  metaverse,
+  logo1,
+  utilisateur,
+  hoobank,
 } from "../assets";
 
 export const navLinks = [
   {
-    id: "about",
+    id: "a-propos",
     title: "A propos",
   },
   {
-    id: "work",
+    id: "stratégie",
+    title: "Stratégie",
+  },
+  {
+    id: "projets",
     title: "Projets",
+  },
+  {
+    id: "avis-clients",
+    title: "Avis",
   },
   {
     id: "contact",
@@ -38,19 +47,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Developpeur web",
+    title: "Site professionnel",
     icon: web,
   },
   {
-    title: "Entrepreneur",
-    icon: mobile,
-  },
-  {
-    title: "Developpeur backend",
+    title: "Site responsive",
     icon: backend,
   },
   {
-    title: "Créateur de contenu",
+    title: "Site rapide",
+    icon: mobile,
+  },
+  {
+    title: "Site élégant",
     icon: creator,
   },
 ];
@@ -96,53 +105,58 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Rendez-vous",
-    company_name: "",
-    icon: starbucks,
-    iconBg: "#383E56",
+    title: "Mon expertise",
+    company_name: "Simple :",
+    icon: verifier,
+    iconBg: "#32CD32",
     date: "⬅️ 1ère étape",
     points: [
-      "Développer et maintenir des sites web en utilisant les meilleures technologies du moment.",
-      "Travailler avec tout types de clients, y compris des PME, des particuliers et d'autres secteurs afin de créer des produits de haute qualité.",
-      "Mettre en œuvre un design créatif et assurer la compatibilité entre les navigateurs et les tailles d'écrans.",
+      "Je travaille avec tout types de clients (PME, particuliers...) dans le but de créer un site web de haute qualité.",
+      "Je créais le design avec vous et j'assure la compatibilité de votre site web sur tous les navigateurs et les tailles d'écrans.",
     ],
   },
   {
-    title: "Collaborer",
-    company_name: "",
-    icon: tesla,
-    iconBg: "#E6DEDD",
+    title: "Rendez-vous",
+    company_name: "Audit gratuit :",
+    icon: verifier,
+    iconBg: "#32CD32",
     date: "2ème étape ➡️",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "On prend rendez-vous ensemble afin de discuter de votre projet.",
+      "Je vous donnerai des conseils et je répondrai à toutes vos questions.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "",
-    icon: shopify,
-    iconBg: "#383E56",
+    title: "Devis gratuit",
+    company_name: "Prix personnalisé :",
+    icon: verifier,
+    iconBg: "#32CD32",
     date: "⬅️ 3ème étape",
     points: [
-      "Développer et maintenir des sites web en utilisant les meilleures technologies du moment.",
-      "Travailler avec tout types de clients, y compris des PME, des particuliers et d'autres secteurs afin de créer des produits de haute qualité.",
-      "Mettre en œuvre un design créatif et assurer la compatibilité entre les navigateurs et les tailles d'écrans.",
+      "Je vous envoie un devis détaillé et personnalisé juste après le 1er rendez-vous.",
+      "Le paiement peut se faire en plusieurs fois.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "",
-    icon: meta,
-    iconBg: "#E6DEDD",
+    title: "Livraison rapide",
+    company_name: "Site web",
+    icon: verifier,
+    iconBg: "#32CD32",
     date: "4ème étape ➡️",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "On prend un 2e rendez-vous pour vous montrer le site web de A à Z.",
+      "On décide ensemble des dernières modifications et on publie le site sur Internet.",
+    ],
+  },
+  {
+    title: "Après ?",
+    company_name: "Dépannage et modification",
+    icon: verifier,
+    iconBg: "#32CD32",
+    date: "⬅️ Dernière étape",
+    points: [
+      "Je reste en contact si vous avez des questions ou des problèmes.",
+      "Enfin, toutes les futures modifications seront facturées selon la demande.",
     ],
   },
 ];
@@ -151,92 +165,138 @@ const testimonials = [
   {
     testimonial:
       "Je pensais qu'il était impossible de créer un site web aussi beau que notre produit, mais Nael m'a prouvé le contraire.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    name: "Jimmy",
+    designation: "PDG",
+    company: "La Pizz",
+    image: logo1,
   },
   {
     testimonial:
-      "Je n'ai jamais rencontré un développeur web qui se soucie autant de la réussite de ses clients que Nael.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Je n'ai jamais rencontré une personne qui se soucie autant de la réussite de ses clients que Nael.",
+    name: "Anonyme",
+    designation: "",
+    company: "",
+    image: utilisateur,
   },
   {
     testimonial:
-      "Après que Nael a optimisé notre site web, notre trafic a augmenté de 50 %. Nous ne les remercierons jamais assez !",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Après que Nael a optimisé notre site web, notre trafic a augmenté de 50 %. Nous ne le remercierons jamais assez !",
+    name: "Anonyme",
+    designation: "",
+    company: "",
+    image: utilisateur,
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "La Pizz",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Toute l'équipe m'ont fait entièrement confiance dans la création et le design du site internet. Maintenant, la Pizz possède un site web élégant, un menu interactif et un très bon référencement sur Google !",
     tags: [
       {
-        name: "react",
+        name: "restaurant",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "bar",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "pizza",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "neufchâteau",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: lapizz,
+    source_code_link: "https://la-pizz-neufchateau.fr",
   },
   {
-    name: "Job IT",
+    name: "CarHub",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Objectif : créer un site internet pour une entreprise de location de voiture. Le site web contient un système de réservation et un catalogue complet des voitures disponible pour la location !",
     tags: [
       {
-        name: "react",
+        name: "location",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "voiture",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "perso",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: carhub,
+    source_code_link: "https://carhub-nael.vercel.app",
   },
   {
-    name: "Trip Guide",
+    name: "Metaverse",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Objectif : créer un site vitrine pour un projet de jeu-vidéo dans le metaverse. Le site web contient toutes les informations et les nouveautés sur le jeu-vidéo, avec une interface agréable et élégante !",
     tags: [
       {
-        name: "nextjs",
+        name: "metaverse",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "site-vitrine",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "perso",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: metaverse,
+    source_code_link: "https://metaverse-nael.netlify.app",
+  },
+  {
+    name: "Hoobank",
+    description:
+      "Objectif : créer un site vitrine pour une banque moderne en ligne. Fonctionnement : coller un lien dans la recherche et le site va résumer tout le contenu qu'il y a sur le site que vous avez choisis !",
+    tags: [
+      {
+        name: "banque",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "site-vitrine",
+        color: "green-text-gradient",
+      },
+      {
+        name: "perso",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: hoobank,
+    source_code_link: "https://hoobank-nael.netlify.app",
+  },
+  {
+    name: "Sumz",
+    description:
+      "Objectif : créer un SaaS (logiciel) pour les particuliers. Fonctionnement : coller un lien dans la recherche et le site va résumer tout le contenu qu'il y a sur le site que vous avez choisis !",
+    tags: [
+      {
+        name: "Sumz",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "SaaS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "perso",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: sumz,
+    source_code_link: "https://sumz-nael.netlify.app",
   },
 ];
 

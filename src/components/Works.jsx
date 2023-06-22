@@ -1,39 +1,38 @@
-import Tilt from 'react-parallax-tilt';
-import { motion } from 'framer-motion';
+import Tilt from "react-parallax-tilt";
+import { styles } from "../style";
+import { SectionWrapper } from "./hoc";
+import { projects } from "../constants";
+import { arrow } from "../assets";
 
-import { styles } from '../style';
-import { SectionWrapper } from './hoc';
-import { projects } from '../constants';
-import { fadeIn, textVariant } from '../utils/motion';
-import { github } from '../assets';
-
-const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
+const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt 
+    <div>
+      <Tilt
         options={{
           max: 45,
           scale: 1,
-          speed: 450
+          speed: 450,
         }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360] w-full"
       >
-        <div className="relative w-full h-[230px]">
-          <img 
-          src={image} 
-          alt={name}
-          className="w-full h-full object-cover rounded-2xl"
+        <div className="relative w-full h-[400px]">
+          <img
+            src={image}
+            alt={name}
+            className="w-full h-full rounded-2xl object-cover object-center"
           />
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
-              onClick={() => window.open (source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursos-pointer"
+              onClick={() => window.open(source_code_link, "_blank")}
+              className="black-gradient w-14 h-14 rounded-full flex justify-center items-center cursor-pointer"
             >
-              <img 
-                src={github} 
-                alt="github" 
-                className="w-1/2 h-1/2 object-contain"
+              <img
+                src={arrow}
+                alt="fleche"
+                className="object-contain"
+                width={20}
+                height={20}
               />
             </div>
           </div>
@@ -51,41 +50,34 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
             </p>
           ))}
         </div>
-      </Tilt >
-    </motion.div>
-  )
-}
+      </Tilt>
+    </div>
+  );
+};
 
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Mon travail</p>
+      <div>
+        <p className={styles.sectionSubText}>Mes créations</p>
         <h2 className={styles.sectionHeadText}>Projets.</h2>
-      </motion.div>
+      </div>
 
       <div className="w-full flex">
-        <motion.p 
-          variants={fadeIn("", "", 0.1, 0.1)}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
-        >
-          Les sites internet suivants présentent mes compétences et 
-          mon expérience à travers des exemples concrets de mon travail. 
-          Chaque sites sont des projets réel ou perso.
-        </motion.p>
+        <p className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
+          Les sites internet suivants présentent mes compétences et mon
+          expérience à travers des exemples. Chaque site sont des projets pro ou
+          perso.
+        </p>
       </div>
 
       <div className="mt-20 flex flex-wrap gap-7">
         {projects.map((project, index) => (
-          <ProjectCard 
-            key={`project-${index}`}
-            index={index}
-            {...project}
-          />
+          <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
     </>
-  )
-}
+  );
+};
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "projets");
