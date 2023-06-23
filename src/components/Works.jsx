@@ -3,6 +3,8 @@ import { styles } from "../style";
 import { SectionWrapper } from "./hoc";
 import { projects } from "../constants";
 import { arrow } from "../assets";
+import { textVariant } from "../utils/motion";
+import { motion } from "framer-motion";
 
 const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
   return (
@@ -21,26 +23,24 @@ const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
             alt={name}
             className="w-full h-full rounded-2xl object-cover object-center"
           />
-
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-14 h-14 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img
-                src={arrow}
-                alt="fleche"
-                className="object-contain"
-                width={20}
-                height={20}
-              />
-            </div>
-          </div>
         </div>
 
         <div className="mt-5">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
+          <button
+            onClick={() => window.open(source_code_link, "_blank")}
+            className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl cursor-pointer mt-2 flex"
+          >
+            Voir le site
+            <img
+              src={arrow}
+              alt="fleche en haut à droite"
+              className="mt-1 ml-3"
+              width={15}
+              height={15}
+            />
+          </button>
         </div>
 
         <div className="mt-4 flex flex-wrap gap-2">
@@ -66,8 +66,7 @@ const Works = () => {
       <div className="w-full flex">
         <p className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
           Les sites internet suivants présentent mes compétences et mon
-          expérience à travers des exemples. Chaque site sont des projets pro ou
-          perso.
+          expérience dans la création de sites web.
         </p>
       </div>
 

@@ -106,18 +106,18 @@ const technologies = [
 const experiences = [
   {
     title: "Mon expertise",
-    company_name: "Simple :",
+    company_name: "Simple",
     icon: verifier,
     iconBg: "#32CD32",
     date: "⬅️ 1ère étape",
     points: [
-      "Je travaille avec tout types de clients (PME, particuliers...) dans le but de créer un site web de haute qualité.",
+      "Je travaille avec tous types de clients (PME, particuliers...) dans le but de créer un site web de haute qualité.",
       "Je créais le design avec vous et j'assure la compatibilité de votre site web sur tous les navigateurs et les tailles d'écrans.",
     ],
   },
   {
     title: "Rendez-vous",
-    company_name: "Audit gratuit :",
+    company_name: "Audit gratuit",
     icon: verifier,
     iconBg: "#32CD32",
     date: "2ème étape ➡️",
@@ -128,7 +128,7 @@ const experiences = [
   },
   {
     title: "Devis gratuit",
-    company_name: "Prix personnalisé :",
+    company_name: "Prix personnalisé",
     icon: verifier,
     iconBg: "#32CD32",
     date: "⬅️ 3ème étape",
@@ -192,7 +192,7 @@ const projects = [
   {
     name: "La Pizz",
     description:
-      "Toute l'équipe m'ont fait entièrement confiance dans la création et le design du site internet. Maintenant, la Pizz possède un site web élégant, un menu interactif et un très bon référencement sur Google !",
+      "Toute l'équipe m'a fait entièrement confiance dans la création et le design du site internet. Maintenant, la Pizz possède un site web élégant, un menu interactif et un très bon référencement sur Google !",
     tags: [
       {
         name: "restaurant",
@@ -217,7 +217,7 @@ const projects = [
   {
     name: "CarHub",
     description:
-      "Objectif : créer un site internet pour une entreprise de location de voiture. Le site web contient un système de réservation et un catalogue complet des voitures disponible pour la location !",
+      "Objectif : créer un site internet pour une entreprise de location de voiture. Le site web contient un système de réservation et un catalogue complet des voitures disponibles pour la location !",
     tags: [
       {
         name: "location",
@@ -238,7 +238,7 @@ const projects = [
   {
     name: "Metaverse",
     description:
-      "Objectif : créer un site vitrine pour un projet de jeu-vidéo dans le metaverse. Le site web contient toutes les informations et les nouveautés sur le jeu-vidéo, avec une interface agréable et élégante !",
+      "Objectif : créer un site vitrine pour un projet de jeu vidéo dans le metaverse. Le site web contient toutes les informations et les nouveautés sur le jeu vidéo, avec une interface agréable et élégante !",
     tags: [
       {
         name: "metaverse",
@@ -259,7 +259,7 @@ const projects = [
   {
     name: "Hoobank",
     description:
-      "Objectif : créer un site vitrine pour une banque moderne en ligne. Fonctionnement : coller un lien dans la recherche et le site va résumer tout le contenu qu'il y a sur le site que vous avez choisis !",
+      "Objectif : créer un site vitrine pour une banque moderne en ligne. Le site web contient toutes les informations et les nouveautés sur la banque, avec une interface agréable et élégante !",
     tags: [
       {
         name: "banque",
@@ -280,7 +280,7 @@ const projects = [
   {
     name: "Sumz",
     description:
-      "Objectif : créer un SaaS (logiciel) pour les particuliers. Fonctionnement : coller un lien dans la recherche et le site va résumer tout le contenu qu'il y a sur le site que vous avez choisis !",
+      "Objectif : créer un Saas (logiciel) pour les particuliers. Fonctionnement : coller un lien dans la recherche et le site va résumer tout le contenu qu'il y a sur le site que vous avez choisi !",
     tags: [
       {
         name: "Sumz",

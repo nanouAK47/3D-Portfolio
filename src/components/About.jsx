@@ -1,11 +1,8 @@
-import React from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
-
 import { styles } from "../style";
 import { services } from "../constants/index";
 import { fadeIn, textVariant } from "../utils/motion";
-
 import { SectionWrapper } from "./hoc";
 
 const ServiceCard = ({ index, title, icon }) => {
@@ -45,14 +42,14 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-4xl leading-[30px]"
       >
-        Je suis un jeune développeur expert dans la création de sites internet.
+        Je suis un développeur expert dans la création de sites internet.
         <br />
         J'ai la solution à tous vos problèmes quand il s'agit du web.
         <br />
-        Je collabore avec chaque client pour créer des solutions efficaces,
-        personnalisées et qui plaisent !
+        Je collabore et conseille chaque client pour créer des solutions
+        personnalisées et professionnels.
         <br />
-        Travaillons ensemble pour donner vie à vos idées !
+        Travaillons ensemble dès maintenant pour donner vie à vos idées !
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

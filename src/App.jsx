@@ -19,7 +19,9 @@ const App = () => {
     <HelmetProvider>
       <Helmet>
         {/* SEO */}
-        <title>NB web - Création de sites internet</title>
+        <title>
+          Développeur web expert en création de sites internet | nb-web
+        </title>
         <meta
           name="description"
           content="NB web, développeur web expert dans la création de sites internet à Bulgnéville, Contrexéville, Vittel, Mirecourt, Neufchâteau et aux alentours !"
